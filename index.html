@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inflow Desk — AI-Powered HVAC Customer Intake</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --primary: #1e40af;
+      --primary-light: #3b82f6;
+      --accent: #0ea5e9;
+      --fg: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    header h1 { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; }
+    header p { font-size: 0.85rem; opacity: 0.8; }
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, #1d4ed8 50%, var(--accent) 100%);
+      color: #fff;
+      text-align: center;
+      padding: 5rem 2rem 4rem;
+    }
+    .hero h2 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.15;
+      max-width: 700px;
+      margin: 0 auto 1.25rem;
+      letter-spacing: -0.03em;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      opacity: 0.9;
+      max-width: 540px;
+      margin: 0 auto 2.5rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: var(--primary);
+      font-weight: 700;
+      padding: 0.85rem 2.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: transform 0.15s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      margin-bottom: 1.25rem;
+    }
+    .features {
+      max-width: 960px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+    }
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      background: #eff6ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .card p { font-size: 0.9rem; color: var(--muted); }
+    .cta {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .cta h2 { font-size: 2rem; font-weight: 800; margin-bottom: 0.75rem; }
+    .cta p { opacity: 0.85; margin-bottom: 2rem; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .btn-outline {
+      display: inline-block;
+      border: 2px solid #fff;
+      color: #fff;
+      font-weight: 700;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--primary-light); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-mark">ID</div>
+    <div>
+      <h1>Inflow Desk</h1>
+      <p>by Inflow Desk LLC</p>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="badge">Now Serving Atlanta-Metro HVAC Shops</div>
+    <h2>Turn Every Call Into a Booked Job — Automatically</h2>
+    <p>Inflow Desk is an AI-powered customer intake system built for owner-operated HVAC businesses. Never miss a lead. Never lose a customer to voicemail.</p>
+    <a href="mailto:hello@inflowdesk.net" class="btn">Get Early Access</a>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <div class="card-icon">📞</div>
+      <h3>24/7 AI Call Handling</h3>
+      <p>Our AI answers calls, qualifies leads, and collects job details around the clock — even when you're on a job or after hours.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <h3>Smart Job Intake</h3>
+      <p>Captures equipment type, issue description, address, and urgency — delivered to your dashboard as a ready-to-schedule work order.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💬</div>
+      <h3>Instant Customer Updates</h3>
+      <p>Automated follow-up texts confirm appointments, reduce no-shows, and keep customers informed without lifting a finger.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Lead Intelligence</h3>
+      <p>See which calls convert, where jobs are coming from, and which hours bring the most inquiries — all in one place.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔧</div>
+      <h3>Built for HVAC Shops</h3>
+      <p>No generic CRM. Inflow Desk speaks HVAC — tonnage, SEER ratings, refrigerant types, service contracts, and more.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <h3>Quick Setup</h3>
+      <p>Forward your business line and you're live in minutes. No IT department. No complicated software to install.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Stop Missing Leads?</h2>
+    <p>Join HVAC shop owners in the Atlanta metro area who are capturing more jobs with less effort.</p>
+    <a href="mailto:hello@inflowdesk.net" class="btn-outline">Contact Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Inflow Desk LLC &mdash; <a href="mailto:hello@inflowdesk.net">hello@inflowdesk.net</a> &mdash; Atlanta, GA</p>
+  </footer>
+</body>
+</html>
